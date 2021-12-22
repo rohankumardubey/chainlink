@@ -4,6 +4,8 @@ import (
 	"math/big"
 	"strings"
 
+	txm "github.com/smartcontractkit/chainlink/core/services/bulletprooftxmanager"
+
 	types2 "github.com/smartcontractkit/chainlink/core/services/relay/types"
 
 	"github.com/ethereum/go-ethereum/accounts/abi"
@@ -11,7 +13,6 @@ import (
 	"github.com/pkg/errors"
 	uuid "github.com/satori/go.uuid"
 	offchain_aggregator_wrapper "github.com/smartcontractkit/chainlink/core/internal/gethwrappers2/generated/offchainaggregator"
-	txm "github.com/smartcontractkit/chainlink/core/services/bulletprooftxmanager"
 	"github.com/smartcontractkit/chainlink/core/services/ocrcommon"
 	"github.com/smartcontractkit/libocr/gethwrappers2/ocr2aggregator"
 	"github.com/smartcontractkit/libocr/offchainreporting2/chains/evmutil"
